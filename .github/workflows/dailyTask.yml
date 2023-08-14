@@ -23,6 +23,6 @@ jobs:
         env:
           sessdata: ${{ secrets.SESSDATA }}
           userId: ${{ secrets.USERID }}
-          bill_jct: ${{ secrets.BILL_JCT }}
+          bill_jct: ${{ secrets.BILL_JT }}
           sckey: ${{ secrets.SCKEY }}
         run: mvn compile exec:java -Dexec.mainClass="com.hhdd.Main" -Dexec.args="${sessdata} ${userId} ${bill_jct} ${sckey}"
